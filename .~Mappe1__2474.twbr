@@ -1,0 +1,1059 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='state_orders' inline='true' name='federated.0varteb0b9j1w816thtof0kaqdl2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='state_orders' name='textscan.05xzqfc06a309r12c0rjn0imioj7'>
+            <connection class='textscan' directory='/Users/tiba/Documents/Code_Academy_Berlin/E-Commerce' filename='state_orders.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.05xzqfc06a309r12c0rjn0imioj7' name='state_orders.csv' table='[state_orders#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='Order Count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[state_orders.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[state_orders.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[state_orders.csv_D26C4D56093340AA91F51490D7C5666B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order Count]</local-name>
+            <parent-name>[state_orders.csv]</parent-name>
+            <remote-alias>Order Count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_orders.csv_D26C4D56093340AA91F51490D7C5666B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='state_orders.csv' datatype='table' name='[__tableau_internal_object_id__].[state_orders.csv_D26C4D56093340AA91F51490D7C5666B]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='/var/folders/tq/9nvqt2l90bvcrsjk_4877y_00000gn/T/tableau-temp/#TableauTemp_10ewk431w44i8n1gr412p0ylt3l4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 05:54:25 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>state_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Order Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>state_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='state_orders.csv' id='state_orders.csv_D26C4D56093340AA91F51490D7C5666B'>
+            <properties context=''>
+              <relation connection='textscan.05xzqfc06a309r12c0rjn0imioj7' name='state_orders.csv' table='[state_orders#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Order Count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='monthly_trend' inline='true' name='federated.07mw1s31tqa9sl12sqnqg14asbez' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='monthly_trend' name='textscan.1jnzrm20s9vuja1d9tvjf15h32un'>
+            <connection class='textscan' directory='/Users/tiba/Documents/Code_Academy_Berlin/E-Commerce' filename='monthly_trend.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1jnzrm20s9vuja1d9tvjf15h32un' name='monthly_trend.csv' table='[monthly_trend#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='integer' name='Order Year' ordinal='0' />
+            <column datatype='integer' name='Order Month' ordinal='1' />
+            <column datatype='string' name='Sales' ordinal='2' />
+            <column datatype='string' name='Profit' ordinal='3' />
+            <column datatype='date' name='Date' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monthly_trend.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order Year]</local-name>
+            <parent-name>[monthly_trend.csv]</parent-name>
+            <remote-alias>Order Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order Month]</local-name>
+            <parent-name>[monthly_trend.csv]</parent-name>
+            <remote-alias>Order Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[monthly_trend.csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[monthly_trend.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[monthly_trend.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Order Month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Order Year]' role='dimension' type='quantitative' />
+      <column caption='monthly_trend.csv' datatype='table' name='[__tableau_internal_object_id__].[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='/var/folders/tq/9nvqt2l90bvcrsjk_4877y_00000gn/T/tableau-temp/#TableauTemp_1hoq0k812v92jf16bc50t0c1ig9c.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 07:16:22 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Order Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Order Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>monthly_trend.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Order Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>monthly_trend.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>2</ordinal>
+              <family>monthly_trend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>3</ordinal>
+              <family>monthly_trend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>monthly_trend.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='monthly_trend.csv' id='monthly_trend.csv_0796E8ACAC89479E8E3D76CC66615924'>
+            <properties context=''>
+              <relation connection='textscan.1jnzrm20s9vuja1d9tvjf15h32un' name='monthly_trend.csv' table='[monthly_trend#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='integer' name='Order Year' ordinal='0' />
+                  <column datatype='integer' name='Order Month' ordinal='1' />
+                  <column datatype='string' name='Sales' ordinal='2' />
+                  <column datatype='string' name='Profit' ordinal='3' />
+                  <column datatype='date' name='Date' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='aov_by_year' inline='true' name='federated.1o3zpk20vdy35r1e4orot0hgrmda' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aov_by_year' name='textscan.0hxy4u11pl002z1do4li90kdoxkf'>
+            <connection class='textscan' directory='/Users/tiba/Documents/Code_Academy_Berlin/E-Commerce' filename='aov_by_year.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0hxy4u11pl002z1do4li90kdoxkf' name='aov_by_year.csv' table='[aov_by_year#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Order_Count' ordinal='1' />
+            <column datatype='string' name='Total_Sales' ordinal='2' />
+            <column datatype='string' name='AOV' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[aov_by_year.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[aov_by_year.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order_Count]</local-name>
+            <parent-name>[aov_by_year.csv]</parent-name>
+            <remote-alias>Order_Count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Sales</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total_Sales]</local-name>
+            <parent-name>[aov_by_year.csv]</parent-name>
+            <remote-alias>Total_Sales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AOV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AOV]</local-name>
+            <parent-name>[aov_by_year.csv]</parent-name>
+            <remote-alias>AOV</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Order Count' datatype='integer' name='[Order_Count]' role='measure' type='quantitative' />
+      <column caption='Total Sales' datatype='string' name='[Total_Sales]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='aov_by_year.csv' datatype='table' name='[__tableau_internal_object_id__].[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='/var/folders/tq/9nvqt2l90bvcrsjk_4877y_00000gn/T/tableau-temp/#TableauTemp_1hqz18909vjosw1al6ht408phq6o.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 07:32:15 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>aov_by_year.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Order_Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>aov_by_year.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Sales</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Total_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Sales</remote-alias>
+              <ordinal>2</ordinal>
+              <family>aov_by_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AOV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AOV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AOV</remote-alias>
+              <ordinal>3</ordinal>
+              <family>aov_by_year.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[aov_by_year.csv_FEAE09759E2742A288EC419E88479A15]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='aov_by_year.csv' id='aov_by_year.csv_FEAE09759E2742A288EC419E88479A15'>
+            <properties context=''>
+              <relation connection='textscan.0hxy4u11pl002z1do4li90kdoxkf' name='aov_by_year.csv' table='[aov_by_year#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Order_Count' ordinal='1' />
+                  <column datatype='string' name='Total_Sales' ordinal='2' />
+                  <column datatype='string' name='AOV' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='state_orders_cleaned' inline='true' name='federated.11qtasi1yalahk10fib4g166io5c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='state_orders_cleaned' name='textscan.0lcuvdi11kl2jo1a2y4uk0r28wlr'>
+            <connection class='textscan' directory='/Users/tiba/Documents/Code_Academy_Berlin/E-Commerce' filename='state_orders_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0lcuvdi11kl2jo1a2y4uk0r28wlr' name='state_orders_cleaned.csv' table='[state_orders_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='Order Count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[state_orders_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[state_orders_cleaned.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[state_orders_cleaned.csv_DD825C9EBFF140EC96D61010CA8DB3AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order Count]</local-name>
+            <parent-name>[state_orders_cleaned.csv]</parent-name>
+            <remote-alias>Order Count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_orders_cleaned.csv_DD825C9EBFF140EC96D61010CA8DB3AD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='state_orders_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[state_orders_cleaned.csv_DD825C9EBFF140EC96D61010CA8DB3AD]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='/var/folders/tq/9nvqt2l90bvcrsjk_4877y_00000gn/T/tableau-temp/#TableauTemp_1pzxlpw0iw7vrg1eho96p1k7mm70.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 06:15:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>state_orders_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[state_orders_cleaned.csv_DD825C9EBFF140EC96D61010CA8DB3AD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Order Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>state_orders_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[state_orders_cleaned.csv_DD825C9EBFF140EC96D61010CA8DB3AD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Vereinigte Staaten von Amerika&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='state_orders_cleaned.csv' id='state_orders_cleaned.csv_DD825C9EBFF140EC96D61010CA8DB3AD'>
+            <properties context=''>
+              <relation connection='textscan.0lcuvdi11kl2jo1a2y4uk0r28wlr' name='state_orders_cleaned.csv' table='[state_orders_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Order Count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='aov' inline='true' name='federated.01stvfs1og9j4c113r2091fpwwll' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aov' name='textscan.1dzuwq40wddgq316kitrr0z09fqe'>
+            <connection class='textscan' directory='/Users/tiba/Documents/Code_Academy_Berlin/E-Commerce' filename='aov.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dzuwq40wddgq316kitrr0z09fqe' name='aov.csv' table='[aov#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='string' name='AOV' ordinal='0' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[aov.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AOV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AOV]</local-name>
+            <parent-name>[aov.csv]</parent-name>
+            <remote-alias>AOV</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[aov.csv_F1FD5755D95C42B9BEBA958E1987FA48]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='aov.csv' datatype='table' name='[__tableau_internal_object_id__].[aov.csv_F1FD5755D95C42B9BEBA958E1987FA48]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='/var/folders/tq/9nvqt2l90bvcrsjk_4877y_00000gn/T/tableau-temp/#TableauTemp_0361wm41bnf2xo166zp2c0o9qawl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 07:32:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>AOV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AOV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AOV</remote-alias>
+              <ordinal>0</ordinal>
+              <family>aov.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[aov.csv_F1FD5755D95C42B9BEBA958E1987FA48]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='aov.csv' id='aov.csv_F1FD5755D95C42B9BEBA958E1987FA48'>
+            <properties context=''>
+              <relation connection='textscan.1dzuwq40wddgq316kitrr0z09fqe' name='aov.csv' table='[aov#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='string' name='AOV' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Blatt 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='state_orders_cleaned' name='federated.11qtasi1yalahk10fib4g166io5c' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.11qtasi1yalahk10fib4g166io5c'>
+            <column datatype='integer' name='[Order Count]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Count]' derivation='Sum' name='[sum:Order Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11qtasi1yalahk10fib4g166io5c].[sum:Order Count:qk]' />
+              <lod column='[federated.11qtasi1yalahk10fib4g166io5c].[none:State:nk]' />
+              <lod column='[federated.11qtasi1yalahk10fib4g166io5c].[sum:Order Count:qk]' />
+              <lod column='[federated.11qtasi1yalahk10fib4g166io5c].[sum:Order Count:qk]' />
+              <color column='[federated.11qtasi1yalahk10fib4g166io5c].[sum:Order Count:qk]' />
+              <tooltip column='[federated.11qtasi1yalahk10fib4g166io5c].[sum:Order Count:qk]' />
+              <geometry column='[federated.11qtasi1yalahk10fib4g166io5c].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11qtasi1yalahk10fib4g166io5c].[Latitude (generated)]</rows>
+        <cols>[federated.11qtasi1yalahk10fib4g166io5c].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{09018364-B536-40BE-A678-ACBF7B0D795F}' />
+    </worksheet>
+    <worksheet name='Blatt 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aov_by_year' name='federated.1o3zpk20vdy35r1e4orot0hgrmda' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o3zpk20vdy35r1e4orot0hgrmda'>
+            <column datatype='string' name='[AOV]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[AOV]' derivation='None' name='[none:AOV:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:Year:qk]' />
+              <text column='[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:AOV:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3EFBB209-1E8C-4C32-9B84-7E01E3E46CBA}' />
+    </worksheet>
+    <worksheet name='Blatt 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aov_by_year' name='federated.1o3zpk20vdy35r1e4orot0hgrmda' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o3zpk20vdy35r1e4orot0hgrmda'>
+            <column datatype='string' name='[AOV]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[AOV]' derivation='None' name='[none:AOV:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:Year:ok]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:AOV:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>Average Order Value&#10;&lt;</run>
+                <run fontalignment='0'>[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:AOV:nk]</run>
+                <run fontalignment='0'>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9507B48B-96FD-44E4-A1D4-37452FD0FA02}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='aov_by_year' name='federated.1o3zpk20vdy35r1e4orot0hgrmda' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1o3zpk20vdy35r1e4orot0hgrmda'>
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97970' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1015'>
+            <zone h='97970' id='5' type-v2='layout-basic' w='72923' x='1231' y='1015'>
+              <zone h='97970' id='3' name='Blatt 3' w='72923' x='1231' y='1015'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97970' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='1015'>
+              <zone h='6599' id='8' mode='dropdown' name='Blatt 3' param='[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:Year:ok]' type-v2='filter' w='24615' x='74154' y='1015'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0E6372D8-10BE-4E4B-BF22-62C8988A290A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='114'>
+    <window class='worksheet' name='Blatt 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.11qtasi1yalahk10fib4g166io5c].[sum:Order Count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{93306BC9-00F9-4D56-B1CF-24BF58AC9ABB}' />
+    </window>
+    <window class='worksheet' name='Blatt 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{50635BBF-E6A9-4718-BF44-697D19887B16}' />
+    </window>
+    <window class='worksheet' name='Blatt 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='247'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card param='[federated.1o3zpk20vdy35r1e4orot0hgrmda].[none:Year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F1DED72-F3B4-4052-9164-C51452A8E38F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Blatt 3' />
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{2DADD916-8E5B-4030-8DCE-2349D1890768}' />
+    </window>
+  </windows>
+</workbook>
