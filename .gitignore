@@ -22,3 +22,6 @@ __pycache__/
 
 # Git
 *.swp
+
+#CSV
+*.csv
