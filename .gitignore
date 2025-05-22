@@ -1,0 +1,24 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+
+# Environment files
+.env
+*.env
+
+# Large datasets/logs
+*.csv
+*.log
+
+# Git
+*.swp
